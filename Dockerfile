@@ -7,7 +7,7 @@ COPY . .
 
 RUN apk update && apk add --no-cache python3 py3-pip
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install --break-system-packages -r requirements.txt
 
 EXPOSE 5000
 CMD ["python3", "app.py"]
