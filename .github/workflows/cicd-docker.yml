@@ -40,4 +40,5 @@ jobs:
           docker image pull leo979712/abr25cicd-docker:flaskapp
           docker container stop flask
           docker container rm flask
-          docker container run -d --name flask -p 80:5000 leo979712/abr25cicd-docker:flaskapp:flaskapp
+          docker container run -d --name flask -p 80:5000 leo979712/abr25cicd-docker:flaskapp
+
